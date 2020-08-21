@@ -1,0 +1,25 @@
+img{
+    height: 280px;
+    width: 200px;
+    border-radius: 1%;
+}
+
+td{
+    padding: 5px;
+    margin: 5px;
+    text-align: left;
+}
+.list{
+    margin-left: 10px;
+    
+}
+.status{
+    background-color: red;
+    color: white;
+    font-style: oblique;
+}
+
+.bold{
+    font-weight: bold;
+    text-align: left;
+}

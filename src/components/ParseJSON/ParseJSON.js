@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import data from '../data/example.json'
+import './index.css'
 
 
 class ParseJSON extends Component{
@@ -8,27 +9,43 @@ class ParseJSON extends Component{
             <div>
                 {data.map((payload, key)=>{
                 return(
-                    <div>
-                        <img src={payload.img} alt={payload.name}/>
-                        <h1>{payload.name} a.k.a "{payload.nickname}"</h1>
+                    <div className="list">
                         <tr>
-                            <td>Birthday</td>
+                            <td></td>
+                            <td>
+                                <img src={payload.img} alt={payload.name}/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h1>{payload.name}</h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <h3>Nickname: {payload.nickname}</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className="bold">Birthday</td>
                             <td>{payload.birthday}</td>
                         </tr>
                         <tr>
-                            <td>Occupation</td>
+                            <td className="bold">Occupation</td>
                             <td>{payload.occupation}</td>
                         </tr>
                         <tr>
-                            <td>Appearance</td>
+                            <td className="bold">Appearance</td>
                             <td>{payload.appearance}</td>
                         </tr>
                         <tr>
-                            <td>Status</td>
-                            <td>{payload.status}</td>
+                            <td className="bold">Status</td>
+                            <td className="status">{payload.status}</td>
                         </tr>
                         <tr>
-                            <td>Portrayed</td>
+                            <td className="bold">Portrayed</td>
                             <td>{payload.portrayed}</td>
                         </tr>                
                     </div>
