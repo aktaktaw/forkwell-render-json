@@ -1,5 +1,5 @@
 import React from 'react';
-import LoadJSON from './components/ParseJSON'
+import LoadJSON from './components/ParseJSON/ParseJSON.js'
 import './App.css';
 
 function App() {
